@@ -7,6 +7,11 @@ export default {
         descr:
           'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
         img: require('../assets/img/1.png'),
+        gallery: [
+          { name: 'Nike Boots First', img: require('../assets/img/1.png') },
+          { name: 'Nike Boots Second', img: require('../assets/img/2.png') },
+          { name: 'Nike Boots Third', img: require('../assets/img/3.png') },
+        ],
       },
       {
         id: 2,
@@ -14,6 +19,11 @@ export default {
         descr:
           'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
         img: require('../assets/img/4.png'),
+        gallery: [
+          { name: 'Nike Boots First', img: require('../assets/img/4.png') },
+          { name: 'Nike Boots Second', img: require('../assets/img/5.png') },
+          { name: 'Nike Boots Third', img: require('../assets/img/6.png') },
+        ],
       },
       {
         id: 3,
@@ -21,6 +31,11 @@ export default {
         descr:
           'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
         img: require('../assets/img/7.png'),
+        gallery: [
+          { name: 'Nike Boots First', img: require('../assets/img/7.png') },
+          { name: 'Nike Boots Second', img: require('../assets/img/8.png') },
+          { name: 'Nike Boots Third', img: require('../assets/img/9.png') },
+        ],
       },
       {
         id: 4,
@@ -28,6 +43,10 @@ export default {
         descr:
           'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
         img: require('../assets/img/10.png'),
+        gallery: [
+          { name: 'Nike Boots First', img: require('../assets/img/10.png') },
+          { name: 'Nike Boots Third', img: require('../assets/img/12.png') },
+        ],
       },
     ],
   },

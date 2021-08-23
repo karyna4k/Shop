@@ -45,7 +45,7 @@ export default {
 <style lang="scss">
 .navbar-link {
   &.router-link-exact-active {
-    color: teal;
+    color: #494ce8;
     font-weight: 700;
   }
 }

@@ -2,9 +2,26 @@
   <div class="wrapper-content wrapper-content--fixed">
     <section>
       <div class="container">
-        <img :src="product.img" :alt="product.title" />
-        <h1>{{ product.title }}</h1>
-        <p>{{ product.descr }}</p>
+        <div class="product">
+          <!-- slider -->
+          <div class="product__slider">
+            <carousel
+              :perPage="1"
+              :paginationEnabled="true"
+              paginationColor="#b3b3b3"
+              paginationActiveColor="#494ce8"
+            >
+              <slide v-for="(slide, index) in product.gallery" :key="index">
+                <img :src="slide.img" :alt="slide.name" />
+              </slide>
+            </carousel>
+          </div>
+          <!-- content -->
+          <div class="product__content">
+            <h1 class="title">{{ product.title }}</h1>
+            <p>{{ product.descr }}</p>
+          </div>
+        </div>
       </div>
     </section>
   </div>
@@ -24,3 +41,17 @@ export default {
   },
 };
 </script>
+
+<style lang="scss">
+.product {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+
+  &__content {
+    min-width: 48%;
+    text-align: center;
+  }
+}
+</style>
