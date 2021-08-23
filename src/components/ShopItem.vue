@@ -1,7 +1,7 @@
 <template>
   <li class="item">
     <img :src="product.img" :alt="product.title" />
-    <h2>{{ product.title }}</h2>
+    <router-link :to="/shop/ + product.id" class="link">{{ product.title }}</router-link>
   </li>
 </template>
 
@@ -20,9 +20,5 @@ export default {
 .item {
   width: calc((100% - 2 * 30px) / 3);
   text-align: center;
-}
-
-h2 {
-  font-size: 22px;
 }
 </style>
